@@ -1,0 +1,27 @@
+<!-- Flowchart Section -->
+<section id="flowchart">
+  <h2>DBT Awareness Chatbot Flow</h2>
+  <div class="mermaid">
+    flowchart TD
+        A[Start] --> B[User Opens Website]
+        B --> C[User Reads Info on Aadhaar Linking]
+        C --> D[User Opens Chatbot for Help]
+        D --> E{User Asks a Question}
+        E -->|What is Aadhaar?| F[Aadhaar is a unique ID for residents]
+        E -->|What is DBT?| G[DBT = Direct Benefit Transfer - benefits go directly to your bank]
+        E -->|Difference?| H[Aadhaar linked ≠ DBT enabled, DBT sends benefits directly]
+        E -->|How to enable?| I[Visit bank, ensure Aadhaar is seeded and DBT activated]
+        F --> J[Chatbot Displays Guidance]
+        G --> J
+        H --> J
+        I --> J
+        J --> K[User Gains Awareness]
+        K --> L[End]
+  </div>
+</section>
+
+<!-- Mermaid JS Script -->
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true });
+</script>
